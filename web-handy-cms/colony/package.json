@@ -1,0 +1,42 @@
+{
+  "name": "appclub",
+  "private": true,
+  "version": "1.0.0",
+  "description": "",
+  "main": "package.json",
+  "author": "KOTA HIGASHI <higashi.kota@gri.jp>",
+  "license": "UNLICENSED",
+  "scripts": {
+    "start": "sanity start",
+    "build": "sanity build",
+    "format": "prettier --write \"{,!(node_modules|dist|build)/**/}*.*\"",
+    "lint": "stylelint --fix \"{,!(node_modules|dist|build)/**/}*.css*\" \"{,!(node_modules|dist|build)/**/}*.scss*\""
+  },
+  "keywords": [
+    "sanity"
+  ],
+  "dependencies": {
+    "@sanity/base": "^2.29.1",
+    "@sanity/core": "^2.28.1",
+    "@sanity/default-layout": "^2.29.1",
+    "@sanity/default-login": "^2.29.1",
+    "@sanity/desk-tool": "^2.29.1",
+    "@sanity/eslint-config-studio": "^2.0.0",
+    "@sanity/vision": "^2.29.1",
+    "eslint": "^8.6.0",
+    "prop-types": "^15.7",
+    "react": "^17.0",
+    "react-dom": "^17.0",
+    "styled-components": "^5.2.0"
+  },
+  "devDependencies": {
+    "prettier": "^2.6.0",
+    "sass": "^1.49.9",
+    "serve": "^13.0.2",
+    "stylelint": "^14.6.0",
+    "stylelint-config-prettier": "^9.0.3",
+    "stylelint-config-recommended-scss": "^6.0.0",
+    "stylelint-order": "^5.0.0",
+    "stylelint-scss": "^4.2.0"
+  }
+}
